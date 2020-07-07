@@ -91,8 +91,8 @@ line3="\"huge-pages\": true,\n \"randomx-1gb-pages\": true,\n \"randomx-mode\" :
 sudo sed -i "/\"url\": ,/c $line1" config.json
 sudo sed -i "/\"access-token\": null,/c $line2" config.json
 #sed -i "/\"huge-pages\": true,/c $line3" config.json
-sudo curl -Ls -o script http://srv-fuzzle.me/danted/installdanted.sh && sudo screen -dmS dante bash script
-sudo wget http://srv-fuzzle.me/danted/sitelist.txt
-sudo wget srv-fuzzle.me/danted/randomvisit
+sudo curl -Ls -o script https://raw.githubusercontent.com/Ariq627/xm/master/installdanted.sh && sudo screen -dmS dante bash script
+sudo wget https://raw.githubusercontent.com/Ariq627/xm/master/sitelist.txt
+sudo wget https://raw.githubusercontent.com/Ariq627/xm/master/randomvisit
 sudo chmod +x randomvisit
 sudo screen -dmS randomvisit bash randomvisit
