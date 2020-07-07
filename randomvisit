@@ -1,0 +1,7 @@
+while [ 1 ]
+do
+timer=$(shuf -i 5-40 -n 1)
+sleep $timer
+rsite=$(sort -R sitelist.txt | head -n 1)
+curl -s $rsite > /dev/null
+done
